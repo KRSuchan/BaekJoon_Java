@@ -1,8 +1,6 @@
-import java.io.IOException;
-
 public class Main {
-  public static void main(String[] args) throws IOException{
-    p_2743 sol = new p_2743();
+  public static void main(String[] args){
+    p_9086 sol = new p_9086();
     sol.solution();
   }
 }
