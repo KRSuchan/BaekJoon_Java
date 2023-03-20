@@ -1,6 +1,6 @@
 public class Main {
   public static void main(String[] args){
-    p_11654 sol = new p_11654();
+    p_11720 sol = new p_11720();
     sol.solution();
   }
 }
