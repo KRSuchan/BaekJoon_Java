@@ -1,6 +1,8 @@
+import java.io.IOException;
+
 public class Main {
-  public static void main(String[] args){
-    p_11720 sol = new p_11720();
+  public static void main(String[] args)throws IOException{
+    p_10809 sol = new p_10809();
     sol.solution();
   }
 }
