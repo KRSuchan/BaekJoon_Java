@@ -1,5 +1,5 @@
 {
   "java.project.sourcePaths": ["SOLUTIONS_code", "."],
-  "java.project.outputPath": "C:/GIT_KRSuchan/BaekJoon/BaekJoon_Java",
+  "java.project.outputPath": "C:/GIT_KRSuchan/BaekJoon/BaekJoon_Java/SOLUTIONS_code",
   "java.project.referencedLibraries": ["lib/**/*.jar"]
 }
