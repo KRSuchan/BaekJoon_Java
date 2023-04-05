@@ -11,12 +11,12 @@ public class p_25206 {
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     String s;
     StringTokenizer st;
-    String subj_name, score;
+    String /*subj_name,*/ score;
     double cred, total_score=0, average=0,total_cred=0;
     for (int i = 0; i < 20; i++) {
       s = br.readLine();
       st = new StringTokenizer(s," ");
-      subj_name=st.nextToken();
+      // subj_name=st.nextToken();
       cred=Double.parseDouble(st.nextToken());
       score=st.nextToken();
       switch (score) {
