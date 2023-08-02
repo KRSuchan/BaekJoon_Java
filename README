@@ -6,12 +6,15 @@ Kumoh National Institute of Technology (kit), South KOREA.
 "SOLUTIONS_code" is the code about real code what I solved BaekJoon problems by Java.
 "SOLUTIONS_IMG" is the images when I had solved the problems I had thought how to solve them.
 
+https://www.acmicpc.net/
+
 E-mail : lsc1814@naver.com
 
 **index**
 p_1152 : 단어의 개수
 p_1157 : 단어 공부
 p_1316 : 그룹 단어 체커
+p_2292 : 벌집
 p_2444 : 별 찍기 - 7
 p_2563 : 색종이
 p_2675 : 문자열 반복
@@ -19,6 +22,7 @@ p_2720 : 세탁소 사장 동혁
 p_2738 : 행렬 덧셈
 p_2743 : 단어 길이 재기
 p_2745 : 진법 변환
+p_2903 : 중앙 이동 알고리즘
 p_2909 : 상수
 p_2941 : 크로아티아 알파벳
 p_5622 : 다이얼
