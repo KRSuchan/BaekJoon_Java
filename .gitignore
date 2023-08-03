@@ -1,9 +1,6 @@
 ### Java template
 # Compiled class file
 *.class
-out
-.idea
-.vscode
 
 # Log file
 *.log
@@ -27,3 +24,12 @@ out
 hs_err_pid*
 replay_pid*
 
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+.vscode
+out
+gen
