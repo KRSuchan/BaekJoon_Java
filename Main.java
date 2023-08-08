@@ -1,30 +1,22 @@
 import java.io.*;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class Main {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    String s = "";
-    while(true){
-      s = br.readLine();
-      if (s.equals("0")){
-        bw.flush();
-        break;
-      }
-      if (isPalindrome(s)){
-        bw.write("yes\n");
-      }else {
-        bw.write("no\n");
-      }
+    int cnt = Integer.parseInt(br.readLine());
+    int[] array = new int[cnt];
+    for (int i = 0; i < cnt; i++) {
+      array[i] = Integer.parseInt(br.readLine());
     }
+    Arrays.sort(array);
+    for (int i = 0; i < cnt; i++) {
+      bw.write(array[i]+"\n");
+    }
+    bw.flush();
     bw.close();
     br.close();
-  }
-  public static boolean isPalindrome(String number){
-    int length = number.length();
-    for (int i = 0; i < length/2; i++) {
-      if (number.charAt(i) != number.charAt(length-i-1)) return false;
-    }
-    return true;
   }
 }
