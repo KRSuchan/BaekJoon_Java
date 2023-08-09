@@ -10,7 +10,7 @@ https://www.acmicpc.net/
 
 E-mail : lsc1814@naver.com
 
-**index**
+**index**  
 p_1152 : 단어의 개수  
 p_1157 : 단어 공부  
 p_1181 : 단어 정렬  
