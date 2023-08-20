@@ -49,7 +49,7 @@ public class p_1018 {
         bw.close();
         br.close();
     }
-    public static int getMin(boolean[][] board){
+    public int getMin(boolean[][] board){
         // 좌상단이 B칸이고 자릿수합이 짝수인 칸이 B가 아니면 최소값++
         int curMin = 0;
         for (int i = 0; i < 8; i++) {
@@ -63,7 +63,7 @@ public class p_1018 {
         }
         return curMin;
     }
-    public static int getReverseMin(boolean[][] board){
+    public int getReverseMin(boolean[][] board){
         // 좌상단이 W칸이고 자릿수 합이 짝수인 칸이 W가 아니면 최소값++
         int curMin = 0;
         for (int i = 0; i < 8; i++) {
