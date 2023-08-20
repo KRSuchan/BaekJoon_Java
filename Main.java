@@ -1,8 +1,10 @@
 import java.io.*;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 public class Main {
-  public void main(String[] args) throws IOException {
+  public static void main(String[] args) throws IOException {
 
   }
 }
