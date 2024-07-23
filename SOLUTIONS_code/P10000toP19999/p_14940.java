@@ -68,13 +68,13 @@ public class p_14940 {
         }
         System.out.print(sb);
     }
-}
 
-class Node {
-    public int x, y;
+    static class Node {
+        public int x, y;
 
-    Node(int x, int y) {
-        this.x = x;
-        this.y = y;
+        Node(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
 }
