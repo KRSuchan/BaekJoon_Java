@@ -1,6 +1,8 @@
 package SOLUTIONS_code.P1000toP9999;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
@@ -12,7 +14,8 @@ public class p_7576 {
     static Queue<Tomato> queue = new LinkedList<>();
     static int[] dx = {-1, 0, 1, 0};
     static int[] dy = {0, 1, 0, -1};
-    public static void main(String[] args) throws IOException {
+
+    public static void solution(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         m = Integer.parseInt(st.nextToken());
@@ -23,20 +26,21 @@ public class p_7576 {
             st = new StringTokenizer(br.readLine());
             for (int j = 0; j < m; j++) {
                 int status = Integer.parseInt(st.nextToken());
-                if (status == -1){
-                    board[i][j]= new Tomato(i, j,-1,true);
+                if (status == -1) {
+                    board[i][j] = new Tomato(i, j, -1, true);
                 } else if (status == 1) {
-                    board[i][j]= new Tomato(i, j,1,true);
+                    board[i][j] = new Tomato(i, j, 1, true);
                     queue.add(board[i][j]);
                 } else {
-                    board[i][j]= new Tomato(i, j,0,false);
+                    board[i][j] = new Tomato(i, j, 0, false);
                 }
             }
         }
         bfs();
         System.out.println(getDays());
     }
-    private static int getDays(){
+
+    private static int getDays() {
         int max = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
@@ -44,8 +48,9 @@ public class p_7576 {
                 else if (board[i][j].day > max) max = board[i][j].day;
             }
         }
-        return max-1;
+        return max - 1;
     }
+
     private static void bfs() {
         int day = 0;
         while (!queue.isEmpty()) {
@@ -56,18 +61,20 @@ public class p_7576 {
                 int nx = t.x + dx[i];
                 int ny = t.y + dy[i];
                 if (nx >= 0 && nx < n && ny >= 0 && ny < m && !board[nx][ny].isVisited && board[nx][ny].day == 0) {
-                    board[nx][ny].day = day+1;
+                    board[nx][ny].day = day + 1;
                     queue.add(board[nx][ny]);
                 }
             }
         }
     }
 }
+
 class Tomato {
     int x;
     int y;
     int day;
     boolean isVisited;
+
     Tomato(int x, int y, int day, boolean isVisited) {
         this.x = x;
         this.y = y;
