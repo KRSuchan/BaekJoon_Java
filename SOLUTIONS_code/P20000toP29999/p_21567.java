@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class p_21567 {
     //    p_21567 : 숫자의 개수 2
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[] numbers = new int[10];
         long abc = Long.parseLong(br.readLine()) * Long.parseLong(br.readLine()) * Long.parseLong(br.readLine());
