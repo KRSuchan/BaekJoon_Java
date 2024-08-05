@@ -125,6 +125,7 @@ p_15666 : N과 M (12)
 p_15829 : Hashing  
 p_15964 : 이상한 기호  
 p_16928 : 뱀과 사다리 게임  
+p_16953 : A → B  
 p_17094 : Serious Problem  
 p_18110 : solved.ac
 
