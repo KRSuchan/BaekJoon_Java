@@ -9,7 +9,7 @@ public class p_1629 {
     //    p_1629 : 곱셈
     static long c;
 
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         long a = Long.parseLong(st.nextToken());
