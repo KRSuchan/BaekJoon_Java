@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class p_9713 {
     //    p_9713 : Sum of Odd Sequence
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int t = Integer.parseInt(br.readLine());
