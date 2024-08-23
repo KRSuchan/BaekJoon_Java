@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class p_3622 {
     //    p_3622 : 어떤 호박의 할로윈 여행
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         Ring A = new Ring(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()));
