@@ -8,7 +8,7 @@ import java.util.TreeMap;
 
 public class p_26150 {
     //    p_26150 : Identify, Sort, Index, Solve
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         // input & sort
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());

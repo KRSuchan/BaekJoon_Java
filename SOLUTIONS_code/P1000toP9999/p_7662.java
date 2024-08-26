@@ -22,7 +22,7 @@ public class p_7662 {
                     map.put(a, map.getOrDefault(a, 0) + 1);
                 } else { // delete 연산
                     if (map.isEmpty()) continue;
-                    int num = a == 1 ? map.lastKey() : map.firstKey();
+                    int num = (a == 1) ? map.lastKey() : map.firstKey();
                     if (map.get(num) == 1) {
                         map.remove(num);
                     } else {
