@@ -14,7 +14,7 @@ public class p_1753 {
     static int[] dist;
     static ArrayList<Path>[] paths;
 
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
