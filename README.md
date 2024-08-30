@@ -94,6 +94,7 @@ p_9019 : DSLR
 p_9086 : 문자열  
 p_9251 : LCS  
 p_9465 : 스티커  
+p_9663 : N-Queen  
 p_9713 : Sum of Odd Sequence
 
 ### #10000
