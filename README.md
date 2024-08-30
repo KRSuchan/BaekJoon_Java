@@ -6,6 +6,8 @@ Kumoh National Institute of Technology (kit), South KOREA.
 "SOLUTIONS_code" is the code about real code what I solved BaekJoon problems by Java.
 "SOLUTIONS_IMG" is the images when I had solved the problems I had thought how to solve them.
 
+[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=2_suchan)](https://solved.ac/2_suchan)
+
 https://www.acmicpc.net/
 
 E-mail : lsc1814@naver.com
