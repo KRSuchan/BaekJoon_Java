@@ -1,8 +1,7 @@
 package SOLUTIONS_code.P1000toP9999;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class p_2183 {
@@ -12,54 +11,60 @@ public class p_2183 {
     static int player;
 
     public static void solution(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        N = Integer.parseInt(st.nextToken());
-        String S = st.nextToken();
-        int games = S.length();
-        ballScore = new int[N];
-        gameScore = new int[N];
-        int[] setScore = new int[N];
-        for (int i = 0; i < games; i++) {
-            int winner = S.charAt(i) - 'A';
-            boolean isGameOver = false;
-            // rule of game
-            if (ballScore[winner] == 3 && !hasMoreThan2Points(winner)) {// If P currently has 3 points and no other player has more than 2 points,
-                // then P wins the current game.
-                isGameOver = true;
-            } else if (ballScore[winner] == 4) { // If P currently has 4 points
-                // then he wins the game.
-                isGameOver = true;
-            } else if (playerHasMoreThan4Points(winner) > 0) { // If any other player currently has 4 points
-                // then that player loses one point.
-                ballScore[player]--;
-            } else {
-                // P gains a point.
-                ballScore[winner]++;
-            }
-            // rule of set
-            if (isGameOver) {
-                gameScore[winner]++;
-                if (gameScore[winner] >= 6 && isWinMoreThan2Games(winner)) { // won at least 6 games in this set
-                    boolean isAllWin = true;
-                    for (int j = 0; j < N; j++) {
-                        if (j != winner && gameScore[j] != 0) {
-                            isAllWin = false;
-                            break;
-                        }
-                    }
-                    if (isAllWin) setScore[winner] += 2;
-                    else setScore[winner]++;
-                    gameScore = new int[N];
+        Scanner scanner = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder();
+        while (scanner.hasNextLine()) {
+            StringTokenizer st = new StringTokenizer(scanner.nextLine());
+            N = Integer.parseInt(st.nextToken());
+            String S = st.nextToken();
+            int games = S.length();
+            ballScore = new int[N];
+            gameScore = new int[N];
+            int[] setScore = new int[N];
+            for (int i = 0; i < games; i++) {
+                int winner = S.charAt(i) - 'A';
+                boolean isGameOver = false;
+                // rule of game
+                if (ballScore[winner] == 3 && !hasMoreThan2Points(winner)) {// If P currently has 3 points and no other player has more than 2 points,
+                    // then P wins the current game.
+                    isGameOver = true;
+                } else if (ballScore[winner] == 4) { // If P currently has 4 points
+                    // then he wins the game.
+                    isGameOver = true;
+                } else if (playerHasMoreThan4Points(winner) > 0) { // If any other player currently has 4 points
+                    // then that player loses one point.
+                    ballScore[player]--;
+                } else {
+                    // P gains a point.
+                    ballScore[winner]++;
                 }
-                ballScore = new int[N];
-            }
-            // rule of tennis
-            if (setScore[winner] >= 3) {
-                System.out.print((char) ('A' + winner));
-                setScore = new int[N];
+                // rule of set
+                if (isGameOver) {
+                    gameScore[winner]++;
+                    if (gameScore[winner] >= 6 && isWinMoreThan2Games(winner)) { // won at least 6 games in this set
+                        boolean isAllWin = true;
+                        for (int j = 0; j < N; j++) {
+                            if (j != winner && gameScore[j] != 0) {
+                                isAllWin = false;
+                                break;
+                            }
+                        }
+                        if (isAllWin) setScore[winner] += 2;
+                        else setScore[winner]++;
+                        gameScore = new int[N];
+                    }
+                    ballScore = new int[N];
+                }
+                // rule of tennis
+                if (setScore[winner] >= 3) {
+                    sb.append((char) ('A' + winner));
+                    setScore = new int[N];
+                    break;
+                }
             }
         }
+        System.out.println(sb);
+        scanner.close();
     }
 
     private static boolean isWinMoreThan2Games(int winner) {
