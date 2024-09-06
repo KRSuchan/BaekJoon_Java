@@ -9,6 +9,8 @@ import java.util.StringTokenizer;
 
 public class p_1865 {
     //    p_1865 : 웜홀
+    //    ref : https://ratsgo.github.io/data%20structure&algorithm/2017/11/27/bellmanford/
+
     static final int INF = 987654321;
 
     static int N, M, W;
