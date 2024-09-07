@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 
 public class p_31881 {
     //    p_31881 : K512에 바이러스 퍼뜨리기
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuilder sb = new StringBuilder();
