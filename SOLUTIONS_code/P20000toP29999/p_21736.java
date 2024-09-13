@@ -65,14 +65,15 @@ public class p_21736 {
             System.out.println(cnt);
         }
     }
-}
 
-class Node {
-    int x;
-    int y;
+    static class Node {
+        int x;
+        int y;
 
-    Node(int x, int y) {
-        this.x = x;
-        this.y = y;
+        Node(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
 }
+

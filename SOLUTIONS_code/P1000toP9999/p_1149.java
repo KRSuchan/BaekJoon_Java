@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class p_1149 {
     //    p_1149 : RGB거리
 
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         // input
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());

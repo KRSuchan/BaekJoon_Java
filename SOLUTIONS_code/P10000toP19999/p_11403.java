@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class p_11403 {
     //    p_11403 : 경로 찾기
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int n = Integer.parseInt(br.readLine());

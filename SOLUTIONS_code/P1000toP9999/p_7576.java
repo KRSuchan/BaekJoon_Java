@@ -67,18 +67,19 @@ public class p_7576 {
             }
         }
     }
-}
 
-class Tomato {
-    int x;
-    int y;
-    int day;
-    boolean isVisited;
+    static class Tomato {
+        int x;
+        int y;
+        int day;
+        boolean isVisited;
 
-    Tomato(int x, int y, int day, boolean isVisited) {
-        this.x = x;
-        this.y = y;
-        this.day = day;
-        this.isVisited = isVisited;
+        Tomato(int x, int y, int day, boolean isVisited) {
+            this.x = x;
+            this.y = y;
+            this.day = day;
+            this.isVisited = isVisited;
+        }
     }
 }
+

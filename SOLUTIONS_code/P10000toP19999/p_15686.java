@@ -14,7 +14,7 @@ public class p_15686 {
     static int ans;
     static boolean[] visited;
 
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         // input
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

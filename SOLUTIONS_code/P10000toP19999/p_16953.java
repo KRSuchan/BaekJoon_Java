@@ -12,7 +12,7 @@ public class p_16953 {
     static long a, b;
     static int cnt;
 
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         a = Long.parseLong(st.nextToken());

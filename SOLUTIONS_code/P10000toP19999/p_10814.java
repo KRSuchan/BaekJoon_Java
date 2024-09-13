@@ -25,32 +25,34 @@ public class p_10814 {
             // 비교 방법 : 멤버의 나이순
             @Override
             public int compare(Member o1, Member o2) {
-                return o1.getAge()-o2.getAge();
+                return o1.getAge() - o2.getAge();
             }
         });
 
         for (int i = 0; i < memberCnt; i++) {
-            bw.write(members[i].getAge()+" "+members[i].getName()+"\n");
+            bw.write(members[i].getAge() + " " + members[i].getName() + "\n");
         }
         bw.flush();
         bw.close();
         br.close();
     }
+
+    static class Member {
+        private int age;
+        private String name;
+
+        public Member(int age, String name) {
+            this.age = age;
+            this.name = name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public String getName() {
+            return name;
+        }
+    }
 }
 
-class Member {
-    private int age;
-    private String name;
-    public Member(int age, String name){
-        this.age = age;
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getName() {
-        return name;
-    }
-}
