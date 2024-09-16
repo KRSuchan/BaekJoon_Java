@@ -171,7 +171,8 @@ p_16928 : 뱀과 사다리 게임
 p_16953 : A → B  
 p_17094 : Serious Problem  
 p_17127 : 벚꽃이 정보섬에 피어난 이유  
-p_18110 : solved.ac
+p_18110 : solved.ac  
+p_19575 : Polynomial
 
 ### #20000
 
