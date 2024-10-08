@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class p_27433 {
     //    p_27433 : 팩토리얼 2
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         var br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println(factorial(Integer.parseInt(br.readLine())));
     }
