@@ -24,13 +24,6 @@ public class p_11729 {
             cnt++;
             return;
         }
-        if (n == 2) {
-            sb.append(s).append(" ").append(m).append("\n");
-            sb.append(s).append(" ").append(e).append("\n");
-            sb.append(m).append(" ").append(e).append("\n");
-            cnt += 3;
-            return;
-        }
         hanoi(s, e, m, n - 1);
         sb.append(s).append(" ").append(e).append("\n");
         cnt++;
