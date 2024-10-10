@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 public class p_2346 {
     //    p_2346 : 풍선 터뜨리기
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         var br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
