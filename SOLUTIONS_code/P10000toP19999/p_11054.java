@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class p_11054 {
     //    p_11054 : 가장 긴 바이토닉 부분 수열
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         var br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
         int[] arr = new int[N];
