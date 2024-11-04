@@ -154,7 +154,8 @@ p_9465 : 스티커
 p_9506 : 약수들의 합  
 p_9663 : N-Queen  
 p_9693 : 시파르  
-p_9713 : Sum of Odd Sequence
+p_9713 : Sum of Odd Sequence  
+p_9935 : 문자열 폭발
 
 ### #10000
 
