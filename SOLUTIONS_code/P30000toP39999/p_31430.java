@@ -1,4 +1,4 @@
-package SOLUTIONS_code.unsolved;
+package SOLUTIONS_code.P30000toP39999;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,16 +24,29 @@ public class p_31430 {
     }
 
     private static String encode(long sum) {
-        StringBuilder result = new StringBuilder();
-        while (sum != 0) {
-            result.append((char) ('a' + (sum % 26)));
-            sum /= 26;
+        char[] s = new char[13];
+        for (int i = 0; i < s.length; i++) {
+            if (sum > 0) {
+                s[i] = (char) ((sum % 26) + 'a');
+                sum /= 26;
+            } else {
+                s[i] = 'a';
+            }
         }
-        while (result.length() < 13) {
-            result.append('-');
-        }
-        return result.toString();
+        return new String(s);
     }
+//    틀린 코드
+//    private static String encode(long sum) {
+//        StringBuilder result = new StringBuilder();
+//        while (sum != 0) {
+//            result.append((char) ('a' + (sum % 26)));
+//            sum /= 26;
+//        }
+//        while (result.length() < 13) {
+//            result.append('-');
+//        }
+//        return result.toString();
+//    }
 
     private static long decode(String encoded) {
         long decoded = 0;
