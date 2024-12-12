@@ -19,6 +19,7 @@ E-mail : lsc1814@naver.com
 ### #1000
 
 p_1010 : 다리 놓기  
+p_1011 : Fly me to the Alpha Centauri  
 p_1018 : 체스판 다시 칠하기  
 p_1037 : 약수  
 p_1149 : RGB거리  
