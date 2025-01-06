@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 public class p_2493 {
     //    p_2493 : 탑
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         var br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         var st = new StringTokenizer(br.readLine());
