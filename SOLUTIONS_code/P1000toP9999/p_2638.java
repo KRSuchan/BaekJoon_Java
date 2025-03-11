@@ -17,7 +17,7 @@ public class p_2638 {
     static int[] dy = {1, -1, 0, 0};
     static ArrayList<Point> cheese;
 
-    public static void main(String[] args) throws IOException {
+    public static void solution(String[] args) throws IOException {
         var br = new BufferedReader(new InputStreamReader(System.in));
         var st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
