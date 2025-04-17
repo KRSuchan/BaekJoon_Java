@@ -1,3 +1,8 @@
+import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,10 +13,19 @@ public class Solved {
     static int titleNumber;
     static String title = ""; // "p_nnnn : test" :
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, UnsupportedFlavorException {
         updateMain();
         updateReadme();
         isReadmeSorted();
+        setClipboard();
+    }
+
+    private static void setClipboard() throws IOException, UnsupportedFlavorException {
+        System.out.println("클립보드에 저장하기");
+        StringSelection data = new StringSelection(title);
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(data, data);
+        System.out.printf("\"%s\" : 클립보드에 복사되었습니다.\n", clipboard.getContents(clipboard).getTransferData(DataFlavor.stringFlavor));
     }
 
     static void isReadmeSorted() throws IOException {
