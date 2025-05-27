@@ -17,7 +17,29 @@ public class Solved {
         updateMain();
         updateReadme();
         isReadmeSorted();
-        setClipboard();
+//        setClipboard();
+        commitAndPush(title);
+    }
+
+    public static void runGitCommand(String command) throws Exception {
+        Process process = Runtime.getRuntime().exec(new String[]{"bash", "-c", command});
+        BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            System.out.println(line);
+        }
+        process.waitFor();
+    }
+
+    public static void commitAndPush(String commitMessage) {
+        try {
+            runGitCommand("git add .");
+            runGitCommand("git commit -m \"" + commitMessage + "\"");
+            runGitCommand("git push");
+            System.out.println("✅ Git 커밋 및 푸시 완료");
+        } catch (Exception e) {
+            System.err.println("❌ 오류 발생: " + e.getMessage());
+        }
     }
 
     private static void setClipboard() throws IOException, UnsupportedFlavorException {
